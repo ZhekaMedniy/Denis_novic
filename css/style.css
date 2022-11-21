@@ -87,4 +87,159 @@ h6 {
   font-weight: inherit;
 }
 
-/*--------------------*//*# sourceMappingURL=style.css.map */
+/*--------------------*/
+body {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.header__content {
+  max-width: 943px;
+  margin: 0 auto 224px;
+}
+.header__content .header__image {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 33px 0 33px;
+}
+
+.row {
+  height: 1px;
+  width: 940px;
+  height: 1px;
+  background-color: #828282;
+}
+
+.header__row {
+  height: 188px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__row .name {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  padding-top: 40px;
+}
+.header__row .info {
+  padding-top: 95px;
+}
+.header__row .button {
+  position: relative;
+  top: 50%;
+  right: -25px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  height: 23px;
+  transform: rotate(-90deg);
+  background: #fff;
+}
+.header__row .button span {
+  color: #828282;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.about {
+  max-width: 485px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about .text {
+  padding: 18px 0 207px;
+}
+
+.skills {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+.skills .title {
+  margin: 0 0 57px;
+}
+.skills .text {
+  margin: 0 0 84px;
+}
+.skills .skills__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 240px;
+}
+.skills .skills__row .skills-item_name {
+  color: #828282;
+  margin: 24px 0 37px;
+}
+.skills .skills__row .stars {
+  display: flex;
+  justify-content: space-between;
+  width: 166px;
+}
+
+.portfolio {
+  max-width: 940px;
+  margin: 0 auto 210px;
+  text-align: center;
+}
+.portfolio .title {
+  margin: 0 0 35px;
+}
+.portfolio a {
+  display: block;
+  text-align: center;
+  margin: 0 0 100px;
+  text-decoration: underline;
+  color: #070707;
+}
+.portfolio .portfolio-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto 45px;
+}
+.portfolio :last-child {
+  margin-bottom: 0;
+}
+
+.contacts {
+  max-width: 340px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+.contacts .text {
+  margin: 20px 0 30px;
+}
+.contacts .contacts__button {
+  font-weight: 800;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 29px;
+  border-radius: 20px;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+}
+.contacts .contacts__button :active {
+  color: #fff;
+}
+.contacts .contacts__button :visited {
+  color: #fff;
+}
+.contacts .contacts__icons {
+  margin: 85px 0 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contacts__like {
+  font-size: 14px;
+  color: #828282;
+}/*# sourceMappingURL=style.css.map */

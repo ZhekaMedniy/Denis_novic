@@ -4,3 +4,162 @@
 // Переменные для блока
 
 // Шаблон №1
+body {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+
+}
+.header__content {
+    max-width: 943px;
+    margin: 0 auto 224px;
+    .header__image {
+        width: 100%;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 33px 0 33px;
+}
+.row {
+    height: 1px;
+    width: 940px;
+    height: 1px;
+    background-color: #828282;
+}
+
+.header__row {
+    height: 188px;
+    display: flex;
+    justify-content: space-between;
+    .name {
+        font-weight: 800;
+        font-size: 47px;
+        line-height: 58px;
+        padding-top: 40px;
+    }
+    .info {
+        padding-top: 95px;
+
+    }
+    .button {
+        position: relative;
+        top: 50%;
+        right: -25px;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 800;
+        height: 23px;
+        transform: rotate(-90deg);
+        background: #fff;
+        span {
+            color: #828282;
+        }
+    }
+}
+
+.title {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.about {
+    max-width: 485px;
+    margin: 0 auto;
+    text-align: center;
+    .text {
+        padding: 18px 0 207px;
+    }
+}
+
+.skills {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    .title {
+        margin: 0 0 57px;
+    }
+    .text {
+        margin: 0 0 84px;
+    }
+    .skills__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 240px;
+        .skills-item_name {
+            color: #828282;
+            margin: 24px 0 37px;
+        }
+        .stars {
+            display: flex;
+            justify-content: space-between;
+            width: 166px;
+        }
+    }
+
+}
+
+.portfolio {
+    max-width: 940px;
+    margin: 0 auto 210px;
+    text-align: center;
+    .title {
+        margin: 0 0 35px;
+    }
+    a {
+        display: block;
+        text-align: center;
+        margin: 0 0 100px;
+        text-decoration: underline;
+        color: #070707;
+
+    }
+
+    .portfolio-img {
+        display: block;
+        width: 100%;
+        margin: 0 auto 45px;
+    }
+    :last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.contacts {
+    max-width: 340px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    .text {
+        margin: 20px 0 30px;
+    }
+    .contacts__button {
+        font-weight: 800;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px 29px;
+        border-radius: 20px;
+        background: black;
+        color: #fff;
+        cursor: pointer;
+        :active {
+            color: #fff;
+        }
+        :visited {
+            color: #fff;
+        }
+    }
+    .contacts__icons {
+        margin: 85px 0 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts__like {
+        font-size: 14px;
+        color: #828282;
+    }
+
+}
