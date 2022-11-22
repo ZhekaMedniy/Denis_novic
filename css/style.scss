@@ -1,30 +1,63 @@
 // Файл обнуляющих стилей
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroymedium';
+    src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
+        url('../fonts/gilroy-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
 @import "styles/nullstyle";
 
 // Переменные для блока
 
 // Шаблон №1
 body {
+    font-family: 'gilroymedium';
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
+}
+
+.links {
+    color: #828282;
+    font-family: 'gilroyextrabold';
 
 }
+:hover {
+    color: black;
+}
+
 .header__content {
     max-width: 943px;
-    margin: 0 auto 224px;
+    margin: 0 auto;
     .header__image {
         width: 100%;
     }
 }
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: #fff;
+    z-index: 5;
+}
 .menu {
+    max-width: 943px;
     display: flex;
     justify-content: space-between;
-    margin: 33px 0 33px;
+    padding: 33px 0 33px;
 }
 .row {
+    margin: 88px 0 0;
     height: 1px;
-    width: 940px;
+    width: 943px;
     height: 1px;
     background-color: #828282;
 }
@@ -34,6 +67,7 @@ body {
     display: flex;
     justify-content: space-between;
     .name {
+        font-family: 'gilroyextrabold';
         font-weight: 800;
         font-size: 47px;
         line-height: 58px;
@@ -60,6 +94,7 @@ body {
 }
 
 .title {
+    font-family: 'gilroyextrabold';
     font-weight: 800;
     font-size: 34px;
     line-height: 42px;
@@ -68,9 +103,13 @@ body {
 .about {
     max-width: 485px;
     margin: 0 auto;
+
     text-align: center;
+    .title {
+        padding-top: 220px;
+    }
     .text {
-        padding: 18px 0 207px;
+        padding: 18px 0 0;
     }
 }
 
@@ -80,6 +119,7 @@ body {
     text-align: center;
     .title {
         margin: 0 0 57px;
+        padding-top: 207px;
     }
     .text {
         margin: 0 0 84px;
@@ -87,7 +127,6 @@ body {
     .skills__row {
         display: flex;
         justify-content: space-between;
-        margin: 0 0 240px;
         .skills-item_name {
             color: #828282;
             margin: 24px 0 37px;
@@ -105,25 +144,29 @@ body {
     max-width: 940px;
     margin: 0 auto 210px;
     text-align: center;
+
+    .portfolio__body {
+        padding-top: 240px;
+    }
+
     .title {
         margin: 0 0 35px;
     }
     a {
         display: block;
         text-align: center;
-        margin: 0 0 100px;
+        // margin: 0 0 100px;
         text-decoration: underline;
         color: #070707;
-
     }
-
     .portfolio-img {
         display: block;
         width: 100%;
-        margin: 0 auto 45px;
+        margin: 100px auto 0;
     }
-    :last-child {
-        margin-bottom: 0;
+    .portfolio-link {
+        padding-top: 45px;
+
     }
 
 }

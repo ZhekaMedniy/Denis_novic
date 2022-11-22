@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"), url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroymedium";
+  src: url("../fonts/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 /*Обнуление*/
 * {
   padding: 0;
@@ -89,28 +101,48 @@ h6 {
 
 /*--------------------*/
 body {
+  font-family: "gilroymedium";
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
 }
 
+.links {
+  color: #828282;
+  font-family: "gilroyextrabold";
+}
+
+:hover {
+  color: black;
+}
+
 .header__content {
   max-width: 943px;
-  margin: 0 auto 224px;
+  margin: 0 auto;
 }
 .header__content .header__image {
   width: 100%;
 }
 
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: #fff;
+  z-index: 5;
+}
+
 .menu {
+  max-width: 943px;
   display: flex;
   justify-content: space-between;
-  margin: 33px 0 33px;
+  padding: 33px 0 33px;
 }
 
 .row {
+  margin: 88px 0 0;
   height: 1px;
-  width: 940px;
+  width: 943px;
   height: 1px;
   background-color: #828282;
 }
@@ -121,6 +153,7 @@ body {
   justify-content: space-between;
 }
 .header__row .name {
+  font-family: "gilroyextrabold";
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -145,6 +178,7 @@ body {
 }
 
 .title {
+  font-family: "gilroyextrabold";
   font-weight: 800;
   font-size: 34px;
   line-height: 42px;
@@ -155,8 +189,11 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+.about .title {
+  padding-top: 220px;
+}
 .about .text {
-  padding: 18px 0 207px;
+  padding: 18px 0 0;
 }
 
 .skills {
@@ -166,6 +203,7 @@ body {
 }
 .skills .title {
   margin: 0 0 57px;
+  padding-top: 207px;
 }
 .skills .text {
   margin: 0 0 84px;
@@ -173,7 +211,6 @@ body {
 .skills .skills__row {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 240px;
 }
 .skills .skills__row .skills-item_name {
   color: #828282;
@@ -190,23 +227,25 @@ body {
   margin: 0 auto 210px;
   text-align: center;
 }
+.portfolio .portfolio__body {
+  padding-top: 240px;
+}
 .portfolio .title {
   margin: 0 0 35px;
 }
 .portfolio a {
   display: block;
   text-align: center;
-  margin: 0 0 100px;
   text-decoration: underline;
   color: #070707;
 }
 .portfolio .portfolio-img {
   display: block;
   width: 100%;
-  margin: 0 auto 45px;
+  margin: 100px auto 0;
 }
-.portfolio :last-child {
-  margin-bottom: 0;
+.portfolio .portfolio-link {
+  padding-top: 45px;
 }
 
 .contacts {
