@@ -111,8 +111,7 @@ body {
   color: #828282;
   font-family: "gilroyextrabold";
 }
-
-:hover {
+.links:hover {
   color: black;
 }
 
@@ -120,7 +119,7 @@ body {
   max-width: 943px;
   margin: 0 auto;
 }
-.header__content .header__image {
+.header__content .header__image-img {
   width: 100%;
 }
 
@@ -244,6 +243,9 @@ body {
   width: 100%;
   margin: 100px auto 0;
 }
+.portfolio .portfolio-img.portfolio-img_first {
+  margin-top: 0;
+}
 .portfolio .portfolio-link {
   padding-top: 45px;
 }
@@ -264,13 +266,9 @@ body {
   padding: 10px 29px;
   border-radius: 20px;
   background: black;
-  color: #fff;
   cursor: pointer;
 }
-.contacts .contacts__button :active {
-  color: #fff;
-}
-.contacts .contacts__button :visited {
+.contacts .contacts__button a {
   color: #fff;
 }
 .contacts .contacts__icons {

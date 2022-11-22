@@ -28,16 +28,15 @@ body {
 .links {
     color: #828282;
     font-family: 'gilroyextrabold';
-
-}
-:hover {
-    color: black;
+    &:hover {
+        color: black;
+    }
 }
 
 .header__content {
     max-width: 943px;
     margin: 0 auto;
-    .header__image {
+    .header__image-img {
         width: 100%;
     }
 }
@@ -47,6 +46,7 @@ body {
     top: 0px;
     background: #fff;
     z-index: 5;
+    // background: green;
 }
 .menu {
     max-width: 943px;
@@ -163,10 +163,12 @@ body {
         display: block;
         width: 100%;
         margin: 100px auto 0;
+        &.portfolio-img_first {
+            margin-top: 0;
+        }
     }
     .portfolio-link {
         padding-top: 45px;
-
     }
 
 }
@@ -186,14 +188,17 @@ body {
         padding: 10px 29px;
         border-radius: 20px;
         background: black;
-        color: #fff;
         cursor: pointer;
-        :active {
+        a {
             color: #fff;
+
         }
-        :visited {
-            color: #fff;
-        }
+        // :active {
+        //     color: #fff;
+        // }
+        // :visited {
+        //     color: #fff;
+        // }
     }
     .contacts__icons {
         margin: 85px 0 45px;
